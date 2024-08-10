@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/color-mode-toggle";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -17,6 +18,7 @@ export default function Home() {
           <li>
             Get started by editing <code>app/page.tsx</code>
           </li>
+          <ModeToggle />
           <li>Save and see your changes instantly.</li>
         </ol>
 
