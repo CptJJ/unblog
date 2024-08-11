@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "trigger:dev": "npx trigger.dev@beta dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -22,10 +21,12 @@
     "@tanstack/react-query": "^5.51.23",
     "@tanstack/react-query-devtools": "^5.51.23",
     "@tanstack/react-query-next-experimental": "^5.51.23",
+
     "@types/mdx": "^2.0.13",
     "cheerio": "^1.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
     "html-to-text": "^9.0.5",
     "next": "15.0.0-rc.0",
     "next-safe-action": "^7.4.3",
@@ -43,9 +44,7 @@
     "turndown": "^7.2.0",
     "url-metadata": "^4.1.1",
     "zod": "^3.23.8",
-    "@trigger.dev/sdk": "^2.3.19",
-    "@trigger.dev/nextjs": "^2.3.19",
-    "@trigger.dev/react": "^2.3.19"
+    "@unblog/tsconfig": "workspace:*"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.14",
@@ -58,8 +57,5 @@
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.9",
     "typescript": "^5"
-  },
-  "trigger.dev": {
-    "endpointId": "unblog-XqCv"
   }
 }
