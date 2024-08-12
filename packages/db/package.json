@@ -2,11 +2,12 @@
   "name": "@unblog/db",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.ts",
   "scripts": {
     "push": "drizzle-kit push"
   },
   "dependencies": {
-    "@libsql/client": "^0.9.0",
     "@neondatabase/serverless": "^0.9.4",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0"

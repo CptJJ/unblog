@@ -1,8 +1,9 @@
-import { createClient } from "@libsql/client";
-import { drizzle } from "drizzle-orm/libsql";
-export * from "drizzle-orm";
-const client = createClient({
-  url: "DATABASE_URL",
-  authToken: "DATABASE_AUTH_TOKEN",
-});
-export const db = drizzle(client);
+import { neon } from '@neondatabase/serverless'
+import { drizzle } from 'drizzle-orm/neon-http'
+import * as schema from './schema'
+export * as tables from './schema'
+
+export * from 'drizzle-orm'
+
+const sql = neon(process.env.DATABASE_URL!)
+export const db = drizzle(sql, { schema })
